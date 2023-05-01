@@ -1,0 +1,69 @@
+==============PORTABLE PROGRAMS================
+
+Hate losing all your browser shortcuts, tabs, bookmarks, settings, etc after a reinstall?
+Just use a portable browser and install it to your secondary partition/drive.
+The browser will be entirely self contained and can be updated in its own folder, so all your settings, tabs, bookmarks, etc will be safe from reinstalls.
+You could even install it to an SSD with a USB-SATA adapter and take it wherever you go.
+
+https://portableapps.com/apps/internet/firefox_portable
+https://portableapps.com/apps/internet/google_chrome_portable
+https://vivaldi.com/download (installer allows installing in portable mode)
+Other browsers:
+https://portableapps.com/apps/internet
+
+Most programs and games that require installation don't actually need to be reinstalled (if you installed them to a separate partition). They only need their runtimes:
+>All-in-One Visual C++ runtimes installer
+https://github.com/abbodi1406/vcredist
+>DirectX
+https://www.microsoft.com/en-us/download/details.aspx?id=35
+
+
+Other useful portable apps:
+
+>torrent client
+https://portableapps.com/apps/internet/qbittorrent_portable
+ 
+>bulk file renamer
+https://www.bulkrenameutility.co.uk/Downloads/BRU_NoInstall.zip
+
+>batch MKV audio language stream stripper 
+https://www.videohelp.com/software/MKV-Optimizer
+
+>fast image viewer
+https://portableapps.com/apps/graphics_pictures/xnview_portable
+
+>simple video player
+https://portableapps.com/apps/music_video/mpc-hc-portable
+ 
+>e-mail client
+https://portableapps.com/apps/internet/thunderbird_portable
+
+
+
+==============PARTITIONING================
+
+By default, your user folder is stored in C:\Users\username, the problem with this is that if your install gets corrupted and you need to reinstall, all of your documents get wiped unless you have a spare computer to plug your C:\ drive into to backup the files first. Moving your user folders to a 2nd partition/drive avoids this problem altogether.
+
+For a 256GB+ SSD, a 100GB Windows partition should be plenty of space for Windows itself and whatever programs you need.
+For a 128GB or smaller SSD, you'll want to have a 2nd storage drive for user folders.
+Games and large suites such as Adobe CC can be installed to a separate partition/SSD.
+ 
+Partitioning:
+Right click Start and select Disk Management.
+Right click the [Windows (C:)] partition and select Shrink Volume, then enter in the amount to shrink in MB.
+If you have a 256 GB SSD, you would want to shrink about 150GB, or 150000MB, then click Shrink.
+If you have OCD and must have a nice round number, use a calculator to calculate 1024MB for each 1GB. So "Total size after shrink" for the Windows partition would be about 102410MB. (The extra 10MB will bump it up to display 100GB in Explorer instead of 99.99GB)
+To get the amount you need to shrink, take your total partition size, subtract 102410, and you'll have your "amount to shrink" number.
+
+After it's done, right click the new Unallocated space and select New Simple Volume.
+Change whatever settings here as needed, but the default settings are fine. Click through and select Finish.
+You should now have a Windows partition on C:\ and an empty data partition on D:\ (or whatever letter you assigned it).
+ 
+Moving user folders to second partition or 2nd drive:
+Go into C:\Users\username.
+Right click on a folder you want to relocate and select Properties.
+Go to the Location tab, and enter in a new location for the folder (example: C:\Users\username\My Documents -> D:\My Documents)
+Do this for every folder with a Location tab.
+Now when an application or game saves user files, it should save to your second partition/drive instead of C:\Users\username, unless the dev is one of those drooling retards that saves data to AppData, there's nothing you can do about them.
+ 
+Now in the event you need to reinstall, you can freely reinstall without worrying about your files. Just reinstall and then redirect the user folders from C:\Users\username to your 2nd partition/drive and all your files will show up in the appropriate locations.
