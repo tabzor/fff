@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-14T12:28:26.460Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="KkGlJdlWjDN1FYk7bWTf" version="21.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-14T12:29:13.418Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="llvgXo2o2ZSo87uw1a6z" version="21.3.0" type="github">
   <diagram name="Page-1" id="GawN0sBzUaCXgQbSJTzt">
     <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -16,16 +16,13 @@
         <mxCell id="Fs72LVVjV9bSrvQO9REc-12" value="&lt;div&gt;4TB&lt;/div&gt;&lt;div&gt;hdd&lt;/div&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.hard_disk;direction=east;" parent="1" vertex="1">
           <mxGeometry x="210" y="343" width="30" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Fs72LVVjV9bSrvQO9REc-13" value="500GB&#xa;ssd &#xa;(backup:&#xa;backup)" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.hard_disk;direction=east;" parent="1" vertex="1">
-          <mxGeometry x="227.5" y="650" width="30" height="40" as="geometry" />
+        <mxCell id="Fs72LVVjV9bSrvQO9REc-13" value="500GB ssd &#xa;ZIL + SLOG" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.hard_disk;direction=east;" parent="1" vertex="1">
+          <mxGeometry x="270" y="343" width="30" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Fs72LVVjV9bSrvQO9REc-14" value="&lt;div&gt;500GB&lt;/div&gt;&lt;div&gt;wd&lt;br&gt;&lt;/div&gt;&lt;div&gt;(backup: &lt;br&gt;&lt;/div&gt;&lt;div&gt;nextcloud)&lt;br&gt;&lt;/div&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.hard_disk;" parent="1" vertex="1">
           <mxGeometry x="110" y="650" width="30" height="40" as="geometry" />
         </mxCell>
         <mxCell id="fxr6Ct1nMl8JVyecD1b2-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fs72LVVjV9bSrvQO9REc-26" target="Fs72LVVjV9bSrvQO9REc-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="fxr6Ct1nMl8JVyecD1b2-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fs72LVVjV9bSrvQO9REc-26" target="Fs72LVVjV9bSrvQO9REc-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fxr6Ct1nMl8JVyecD1b2-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fs72LVVjV9bSrvQO9REc-26" target="tln2pNOTJKCZgoth8Ehh-34" edge="1">
